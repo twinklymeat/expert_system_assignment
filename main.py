@@ -43,6 +43,7 @@ def collect_initial_facts():
 def main():
     # TODO: Load rules, create engine, assert facts, and run inference
     facts = collect_initial_facts()
+    print(facts)
     # print(load_rules(KB_PATH))
     # print(facts)
     FCE = ForwardChainingEngine(load_rules(KB_PATH)) 
